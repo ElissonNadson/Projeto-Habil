@@ -10,6 +10,8 @@
 <p>Olá! 👋 Este é o projeto Hábil Consultoria de Marketing, uma agência de marketing digital. Temos como especialidade proporcionar soluções de marketing inovadoras e altamente eficazes para nossos clientes. Contamos com uma equipe diversificada e experiente que está constantemente buscando maneiras criativas de atender às necessidades únicas de nossos clientes em um mercado altamente competitivo.
 </p>
 
+</p> Este projeto é uma colaboração entre a turma de administração e a equipe do curso de desenvolvimento de sistemas. Estamos trabalhando juntos para ajudar a turma de administração a concluir seu projeto.</p>
+
 <h2>Como Funciona</h2>
 
 <p>Nossa missão é criar um ambiente agradável, aconchegante e acolhedor. Queremos que as pessoas se sintam confortáveis com o nosso atendimento e desfrutem de nossa ampla gama de produtos, proporcionando experiências únicas e memoráveis com as pessoas que amam.</p>
