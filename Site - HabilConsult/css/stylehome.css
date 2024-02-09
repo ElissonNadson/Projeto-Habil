@@ -1,0 +1,99 @@
+/* Gerais */
+body {
+  background-image: url(../addons/background-homepage.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  
+}
+
+@media (max-width: 767px) {
+  body {
+    background-attachment: scroll;
+  }
+}
+
+header {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+}
+
+/* Página Principal */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  overflow: hidden;
+  height: 100vh; /* Ajusta a altura conforme necessário */
+}
+
+/*Edição da imagem e video*/
+.container {
+  text-align: center;
+  flex-basis: 50%;
+  animation: fadeIn 1s ease-in;
+}
+
+.video-container {
+  width: 450px;
+  height: 450px;
+  margin-top: 50px;
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+
+@media (max-width: 991.98px) {
+  .container {
+    flex-basis: 100%;
+  }
+
+  .video-container {
+    width: 200px;
+    height: 200px;
+    flex-basis: 100%;
+  }
+
+  p {
+    font-size: 14px; /* Tamanho do texto menor para dispositivos móveis */
+  }
+}
+
+p {
+  color: var(--white-standard);
+  font-size: 18px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+}
+
+.image_style {
+  width: 450px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scrollbar Personalizada*/
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--white-standard); 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--purple-color1); 
+}

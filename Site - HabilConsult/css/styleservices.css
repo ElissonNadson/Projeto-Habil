@@ -1,0 +1,14 @@
+body {
+    background-color: #1c1c39 !important;
+}
+
+.card_style {
+    background-color: #6351ce !important;
+    color: #ffffff !important;
+    font-size: larger !important;
+}
+
+.title_style {
+    font-size: 25px;
+    font-weight: bolder;
+}
