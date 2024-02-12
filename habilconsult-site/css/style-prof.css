@@ -1,11 +1,26 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap'); /* font-family: 'Quicksand', sans-serif; */
+@import url('util.css');
+
 body {
-    background-color: #1c1c39 !important;
+    background-color: var(--dark-color1) !important;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .card_style {
     background: linear-gradient(120deg, #1c1c39, #3f3f9e) !important;
-    color: #ffffff !important;
+    color: white !important;
+    font-family: 'Quicksand', sans-serif;
     font-size: larger !important;
+    transition: 0.5s, transform 0.8s;
+}
+
+.card_style:hover {
+    transform: scale(1.01);
 }
 
 .button_style {
@@ -18,7 +33,7 @@ body {
     background: linear-gradient(to left, #5180ff, #ff66c4);
     border: none;
     border-radius: 30px;
-    transition: background 0.5s, transform 0.5s;
+    transition: background 0.5s, transform 0.8s;
     /* Adiciona a transição para a propriedade de fundo */
 }
 
@@ -54,7 +69,7 @@ body {
 
 .subtitle_style {
     font-weight: bolder;
-    color: #a393ff !important;
+    color: var(--purple-color3) !important;
 }
 
 .title_style {
@@ -64,6 +79,6 @@ body {
 
 .star_style {
     max-width: 120px;
-    background-color: #1c1c39;
+    background-color: var(--dark-color1);
     border-radius: 30px;
 }

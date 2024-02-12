@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylehome.css">
     <!-- Favicons -->
     <link rel="icon" type="image/png" sizes="192x192" href="addons/favicon_io/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="addons/favicon_io/android-chrome-512x512.png">
@@ -11,14 +12,13 @@
     <link rel="icon" type="image/png" sizes="16x16" href="addons/favicon_io/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="addons/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/x-icon" href="addons/favicon_io/favicon.ico">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/util.css">
-    <link rel="stylesheet" href="css/styleabout.css">
     <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <title>Sobre Nós</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style-forms.css">
+    <title>Contatos</title>
 </head>
 
 <body>
@@ -51,46 +51,46 @@
                             <a id="contacts-link" class="nav-link" href="contacts.html">Contatos</a>
                         </li>
                     </ul>
-                    <button id="partner-btn" type="button" class="btn btn-primary btn-lg">Seja nosso Parceiro</button>
+                    <button id="partner-btn" type="button" class="btn btn-primary btn-lg"><a
+                            href="acess.html">Cadastre-se</a></button>
                 </div>
             </div>
         </nav>
     </header>
 
-    <main>
-        <div class="container container_style">
-            <div class="title_style text-center d-flex align-items-center justify-content-center"> 
-                <h2>Bem-vindo a HÁBIL</h2>
+    <!-- Formulário teste para cadastro de cliente -->
+    <main class="container" style="margin-bottom: 15%; padding-top: 200px;">
+        <h5 class="title-text">Formulário de Cliente</h5>
+        <form>
+            <div class="form-group mt-2">
+                <label for="exampleFormControlInput1">Nome Completo:</label>
+                <input type="text" class="form-control" id="nameForm" placeholder="Digite seu nome" required>
             </div>
-            <div class="col-sm-8 pt-3 pb-5">
-                Somos uma agência de marketing digital. Temos como especialidade proporcionar soluções de marketing
-                inovadoras e altamente eficazes para nossos clientes. Contamos com uma equipe diversificada e experiente
-                que está constantemente buscando maneiras criativas de atender às necessidades únicas de nossos clientes
-                em um mercado altamente competitivo. 
-                <br><br> 
-                <div class="subtitle_style">• Nossa Missão:</div>
-                criar um ambiente agradável, aconchegante e acolhedor. Queremos que as pessoas se sintam
-                confortáveis com o nosso atendimento e desfrutem de nossa ampla gama de produtos, proporcionando
-                experiências únicas e memoráveis com as pessoas que amam. 
-                <br><br>
-                <div class="subtitle_style">• Nossa Visão:</div>
-                Buscamos ser reconhecidos no mercado não apenas pela qualidade de nossos serviços, mas
-                também pela forma acolhedora e surpreendentemente deliciosa com que fazemos negócios. Queremos ser
-                lembrados não apenas pelo que fazemos, mas pela maneira como fazemos. 
-                <br><br>
-                <div class="subtitle_style">• Nossos Valores:</div>
-                Integridade, ética, bem-estar, organização, sustentabilidade, diversidade, criatividade
-                e transparência. Acreditamos que esses valores são fundamentais para construir relacionamentos sólidos
-                com nossos clientes e parceiros de negócios. 
-                <br><br>
-                <div class="subtitle_style">• Nosso Objetivo:</div>
-                Estamos em constante busca por profissionais de marketing talentosos e apaixonados para
-                se juntarem à nossa equipe. Valorizamos a criatividade, o conhecimento das tendências atuais e a
-                dedicação em fornecer resultados excepcionais para nossos clientes. Como uma agência de rápido
-                crescimento, estamos à procura de pessoas que se destaquem em um ambiente dinâmico e estejam
-                comprometidas em alcançar resultados notáveis.
+            <div class="form-group mt-2">
+                <label for="exampleFormControlInput1">E-mail:</label>
+                <input type="email" class="form-control" id="emailForm" placeholder="name@example.com" required>
             </div>
-        </div>
+            <div class="form-group mt-2">
+                <label for="phoneForm">Telefone:</label>
+                <input type="text" class="form-control" id="phoneForm" placeholder="(XX) X XXXX-XXXX" pattern="[0-9]{10,13}" required>
+            </div>
+            <div class="form-group mt-2">
+                <label for="exampleFormControlInput1">Razão Social:</label>
+                <input type="text" class="form-control" id="nameForm" placeholder="Digite o nome da sua razão social" required>
+            </div>
+            <div class="form-group mt-2">
+                <label for="exampleFormControlInput1">CNPJ:</label>
+                <input type="text" class="form-control" id="nameForm" placeholder="XX.XXX.XXX/0001-XX" required>
+            </div>
+            <div class="form-group mt-2">
+                <label for="exampleFormControlTextarea1">Conte-nos sobre seu projeto:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+            </div>
+            <div class="btn-container d-flex justify-content-center">
+                <button type="submit" class="btn-confirm">Enviar</button>
+            </div>
+        </form>
+
     </main>
 
     <!-- Footer -->
@@ -105,13 +105,14 @@
 
             <!-- Right -->
             <div>
-                <a href="" class="text-white me-4">
-                    <i class="bi bi-facebook"></i>
+                <a href="https://www.linkedin.com/in/h%C3%A1bil-consultoria-de-marketing-27696b297/" target="_blank"
+                    class="text-white me-4">
+                    <i class="bi bi-linkedin"></i>
                 </a>
-                <a href="" class="text-white me-4">
+                <a href="mailto:habilconsultoriademarketing@gmail.com" class="text-white me-4">
                     <i class="bi bi-google"></i>
                 </a>
-                <a href="" class="text-white me-4">
+                <a href="https://www.instagram.com/habilconsultoriademarketing" target="_blank" class="text-white me-4">
                     <i class="bi bi-instagram"></i>
                 </a>
             </div>
@@ -127,11 +128,15 @@
                     <!-- Grid column -->
                     <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                         <!-- Content -->
-                        <h6 class="text-uppercase fw-bold">Hábil Consultória de Markting</h6>
+                        <h6 class="text-uppercase fw-bold">Hábil Consultoria de Markting</h6>
                         <hr class="mb-4 mt-0 d-inline-block mx-auto"
                             style="width: 60px; background-color: #7c4dff; height: 2px" />
                         <p>
-                            Colocar um texto sobre o projeto
+                            Proporcionamos soluções de marketing digital inovadoras e eficazes, com uma equipe
+                            diversificada e experiente. Criamos experiências únicas e memoráveis, valorizando a
+                            integridade, ética, criatividade e transparência. Buscamos profissionais talentosos e
+                            apaixonados para se juntarem a nós e alcançarem resultados excepcionais em um ambiente
+                            dinâmico.
                         </p>
                     </div>
                     <!-- Grid column -->
@@ -139,20 +144,36 @@
                     <!-- Grid column -->
                     <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                         <!-- Links -->
-                        <h6 class="text-uppercase fw-bold">Producers</h6>
+                        <h6 class="text-uppercase fw-bold">Fundadores</h6>
                         <hr class="mb-4 mt-0 d-inline-block mx-auto"
                             style="width: 60px; background-color: #7c4dff; height: 2px" />
                         <p>
-                            <a href="#!" class="text-white">Pessoa A</a>
+                            <a href="https://www.linkedin.com/in/ana-beatriz-569a05267/" target="_blank"
+                                class="text-white">Ana Beatriz Freitas dos Santos </a>
                         </p>
                         <p>
-                            <a href="#!" class="text-white">Pessoa B</a>
+                            <a href="https://www.linkedin.com/in/nikele-ferreira-976195111" target="_blank"
+                                class="text-white">Nikele Ferreira</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-white">Pessoa C</a>
+                            <a href="https://br.linkedin.com/in/camila-santana-59a556277" target="_blank"
+                                class="text-white">Camila Santana</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold">Desenvolvedores Web</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: #7c4dff; height: 2px" />
+                        <p>
+                            <a href="https://www.linkedin.com/in/-ruanclaudio-/" target="_blank" class="text-white">Ruan
+                                Cláudio Damasceno Souza</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-white">Pessoa D</a>
+                            <a href="https://www.linkedin.com/in/luizhenriqueccarvalho/" target="_blank"
+                                class="text-white">Luiz Henrique Carneiro Carvalho</a>
                         </p>
                     </div>
                     <!-- Grid column -->
@@ -167,9 +188,6 @@
                             <a href="contacts.html" class="text-white">Contatos</a>
                         </p>
                         <p>
-                            <a href="#" class="text-white">Seja nosso Parceiro</a>
-                        </p>
-                        <p>
                             <a href="services.html" class="text-white">Serviços</a>
                         </p>
                         <p>
@@ -179,14 +197,14 @@
                     <!-- Grid column -->
 
                     <!-- Grid column -->
-                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 p-0">
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold">Contato</h6>
                         <hr class="mb-4 mt-0 d-inline-block mx-auto"
                             style="width: 60px; background-color: #7c4dff; height: 2px" />
-                        <p><i class="bi bi-house-fill"></i> New York, NY 10012, US</p>
-                        <p><i class="bi bi-envelope-fill"></i> info@example.com</p>
-                        <p><i class="bi bi-telephone-fill"></i> + 01 234 567 88</p>
+                        <p><i class="bi bi-house-fill"></i> Feira de Santana, BA, BR</p>
+                        <p><i class="bi bi-envelope-fill"></i> habilconsultoriademarketing@gmail.com</p>
+                        <p><i class="bi bi-telephone-fill"></i> +55 75 9999-9999</p>
                     </div>
                     <!-- Grid column -->
                 </div>

@@ -1,13 +1,19 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap'); /* font-family: 'Quicksand', sans-serif; */
+@import url('util.css');
+
 /* Gerais */
 body {
   background-image: url(../addons/background-homepage.png);
-  background-size: auto;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   body {
+    background-image: none;
+    background-color: var(--dark-color1) !important;
     background-attachment: scroll;
   }
 }
@@ -36,20 +42,15 @@ header {
 }
 
 .video-container {
-  width: 450px;
-  height: 450px;
+  width: 400px;
+  height: 400px;
   margin-top: 50px;
   flex-basis: 50%;
   display: flex;
   justify-content: center;
-  z-index: 1;
 }
 
 @media (max-width: 991.98px) {
-  .container {
-    flex-basis: 100%;
-  }
-
   .video-container {
     width: 200px;
     height: 200px;
@@ -61,15 +62,19 @@ header {
   }
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 p {
-  color: var(--white-standard);
-  font-size: 18px;
+  color: white;
   font-family: 'Quicksand', sans-serif;
-  font-weight: 300;
 }
 
 .image_style {
-  width: 450px;
+  width: 700px;
+  pointer-events: none;
 }
 
 @keyframes fadeIn {
@@ -83,17 +88,3 @@ p {
   }
 }
 
-/* Scrollbar Personalizada*/
-::-webkit-scrollbar {
-  width: 12px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: var(--white-standard); 
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: var(--purple-color1); 
-}
