@@ -1,0 +1,92 @@
+/* Resetando todos os parâmetros */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para o body */
+body {
+    background-color: #1C1C39;
+    color: white;
+    font-family: 'Roboto', sans-serif; /* Fonte do Google Fonts */
+    line-height: 1.6;
+}
+
+/* Estilos para os conteúdos */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .logo,
+.container .info,
+.container .texto {
+    margin-bottom: 20px;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para o menu */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Alinhamento do menu */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #1C1C39;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: bold; /* Fonte em negrito */
+}
+
+nav ul li a:hover {
+    color: #FFD700; /* Cor quando passa o mouse */
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #333333; /* Cinza escuro */
+    color: white;
+    padding: 20px 0;
+    text-align: center; /* Alinhamento do rodapé */
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+footer a:hover {
+    color: #FFD700; /* Cor quando passa o mouse */
+}
+
+/* Estilos para o vídeo */
+iframe {
+    width: 100%;
+    height: auto; /* Tornar o vídeo responsivo */
+}
+
+/* Estilos para os títulos */
+h3 {
+    color: #FFD700; /* Amarelo */
+    text-align: center; /* Alinhamento do título */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
